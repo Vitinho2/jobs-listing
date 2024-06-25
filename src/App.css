@@ -80,6 +80,11 @@ main .job .infoJob .info .office{
   font-size: 20px;
 }
 
+main .job .infoJob .info .office:hover{
+  color: var(--DesaturatedDarkCyan);
+  cursor: pointer;
+}
+
 main .job .infoJob .info .aboutJob{
   display: flex;
   align-items: center;
@@ -108,4 +113,10 @@ main .job .infoJob .requirements div{
   border-radius: 5px;
   user-select: none;
   margin-right: 15px;
+}
+
+main .job .infoJob .requirements div:hover{
+  background-color: var(--DesaturatedDarkCyan);
+  color: var(--LightGrayishCyan);
+  cursor: pointer;
 }
