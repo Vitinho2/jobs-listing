@@ -49,8 +49,7 @@ main .job img{
   width: 10%;
   height: 80%;
   border-radius: 50%;
-  margin-right: 15px;
-  border: 1px solid black;
+  margin-right: 20px;
 }
 
 main .job .infoJob{
@@ -71,7 +70,7 @@ main .job .infoJob .info{
 
 main .job .infoJob .info .nameCompany{
   color: var(--DesaturatedDarkCyan);
-  font-weight: 500;
+  font-weight: 700;
   font-size: 15px;
 }
 
@@ -81,10 +80,32 @@ main .job .infoJob .info .office{
   font-size: 20px;
 }
 
+main .job .infoJob .info .aboutJob{
+  display: flex;
+  align-items: center;
+  color: var(--DarkGrayishCyan);
+  user-select: none;
+}
+
+main .job .infoJob .info .aboutJob .separation{
+  background-color: var(--DarkGrayishCyan);
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  margin: 0 10px;
+  user-select: none;
+}
+
+main .job .infoJob .requirements{
+  display: flex;
+}
+
 main .job .infoJob .requirements div{
   background-color: var(--LightGrayish);
   color: var(--DesaturatedDarkCyan);
+  font-weight: 600;
   padding: 7px;
   border-radius: 5px;
   user-select: none;
+  margin-right: 15px;
 }

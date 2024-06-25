@@ -27,10 +27,22 @@ export function App() {
             <div className="info">
               <p className="nameCompany">{obj.company}</p>
               <div className="office">{obj.position}</div>
-              <div className="aboutJob">p</div>
+              <div className="aboutJob">
+                {obj.postedAt}
+                <div className="separation"></div>
+                {obj.contract}
+                <div className="separation"></div>
+                {obj.location}
+              </div>
             </div>
             <div className="requirements">
-              <div>{obj.languages}</div>
+              <div>{obj.role}</div>
+              <div>{obj.level}</div>
+              {obj.languages.map((language, langIndex) => (
+                <div key={langIndex}>
+                  {language}
+                </div>
+              ))}
             </div>
           </div>
         </div>
